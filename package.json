@@ -1,22 +1,23 @@
 {
-  "name": "Anime-storefront",
+  "name": "anime-storefront",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seeds": "node seeds/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JohnLanni619/Anime-storefront.git"
+    "url": "git+https://github.com/JohnLanni619/anime-storefront.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JohnLanni619/Anime-storefront/issues"
+    "url": "https://github.com/JohnLanni619/anime-storefront/issues"
   },
-  "homepage": "https://github.com/JohnLanni619/Anime-storefront#readme",
+  "homepage": "https://github.com/JohnLanni619/anime-storefront#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.1",

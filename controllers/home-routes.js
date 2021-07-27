@@ -2,7 +2,9 @@ const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { Product, Tag, ProductTag, Category } = require('../models');
 
-// get all products for homepage
+// get all products for shop-all
+
+
 router.get('/', (req, res) => {
 
   Product.findAll({
@@ -21,18 +23,6 @@ router.get('/', (req, res) => {
         model: Tag,
         through: ProductTag
       },
-      // {
-      //   model: Comment,
-      //   attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
-      //   include: {
-      //     model: User,
-      //     attributes: ['username']
-      //   }
-      // },
-      // {
-      //   model: User,
-      //   attributes: ['username']
-      // }
     ]
   })
     .then(dbProductData => {
@@ -63,20 +53,13 @@ router.get('/product/:id', (req, res) => {
       'category_id',
       'img_url'
     ],
-    // include: [
-    //   {
-    //     model: Comment,
-    //     attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
-    //     include: {
-    //       model: User,
-    //       attributes: ['username']
-    //     }
-    //   },
-    //   {
-    //     model: User,
-    //     attributes: ['username']
-    //   }
-    // ]
+    include: [
+      Category,
+      {
+        model: Tag,
+        through: ProductTag
+      },
+    ]
   })
     .then(dbProductData => {
       if (!dbProductData) {
@@ -94,6 +77,37 @@ router.get('/product/:id', (req, res) => {
       console.log(err);
       res.status(500).json(err);
     });
+});
+
+// Get by category
+router.get('/category/:id', (req, res) => {
+  Category.findOne({
+    where: {
+      id: req.params.id,
+    },
+    include: [{
+      model: Product,
+      as: 'products',
+      where: { category_id: req.params.id },
+    }]
+  })
+  .then(dbCategoryData => {
+    console.log(dbCategoryData);
+    if (!dbCategoryData) {
+      res.status(404).json({ message: 'No category found with this id' });
+      return;
+    }
+
+    const category = dbCategoryData.get({ plain: true });
+
+    res.render('categories', {
+      category,
+    });
+  })
+  .catch(err => {
+    console.log(err);
+    res.status(500).json(err);
+  });
 });
 
 module.exports = router;

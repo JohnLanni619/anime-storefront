@@ -13,4 +13,10 @@ router.get('/', (req, res) => {
     });
 });
 
+// sign-up route
+
+// login route
+
+// logout route
+
 module.exports = router;

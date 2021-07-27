@@ -41,6 +41,10 @@ Product.init(
         model: 'category',
         key: 'id'
       }
+    },
+    img_url: {
+      type: DataTypes.STRING,
+      allowNull: true
     }
   },
   {

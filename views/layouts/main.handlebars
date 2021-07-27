@@ -37,7 +37,7 @@
           <a href="/category/5">Misc</a>
         </h2>
         <h2>
-        <button id="logout" class="btn-no-style">Logout</button>
+        <button id="logout" type="submit" class="btn-no-style">Logout</button>
         </h2>
         <h2>
         <a href="/login">Login</a>
@@ -52,7 +52,9 @@
       Thanks for visiting!
     </footer>
   </div>
-
+{{#if loggedIn}}  
+<script src="/javascript/logout.js"></script>
+{{/if}}
 </body>
 
 </html>

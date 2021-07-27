@@ -42,6 +42,7 @@ const productData = [
     price: 104.99,
     stock: 33,
     category_id: 4,
+    img_url: 'https://cdn.shopify.com/s/files/1/0070/4892/1139/products/pillpinset_5b16b52a-9e79-4680-8b6c-1689d295025e_1080x.jpg?v=1605580477',
   },
   {
     product_name: 'YY ENAMEL PINS - FULL SET (7 PCS)',

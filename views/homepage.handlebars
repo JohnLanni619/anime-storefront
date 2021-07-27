@@ -1,0 +1,13 @@
+<ol class="post-list">
+  {{#each products}}
+  <li>
+    <article class="post">
+      <div class="title">
+        <a href="/api/products/{{id}}" target="_blank">{{product_name}}</a>
+        <p class="content"> ${{price}} </p>
+        <img src="{{img_url}} width="300" height="400"">
+      </div>
+    </article>
+  </li>
+  {{/each}}
+</ol>

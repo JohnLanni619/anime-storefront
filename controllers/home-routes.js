@@ -9,8 +9,6 @@ router.get('/', (req, res) => {
       'id',
       'product_name',
       'price',
-      'stock',
-      'price',
       'category_id',
       'img_url',
     ],
@@ -44,8 +42,6 @@ router.get('/product/:id', (req, res) => {
     attributes: [
       'id',
       'product_name',
-      'price',
-      'stock',
       'price',
       'category_id',
       'img_url'

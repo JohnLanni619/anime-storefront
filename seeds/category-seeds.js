@@ -13,9 +13,6 @@ const categoryData = [
   {
     category_name: 'Enamel Pins',
   },
-  {
-    category_name: 'Misc',
-  },
 ];
 
 const seedCategories = () => Category.bulkCreate(categoryData);

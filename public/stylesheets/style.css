@@ -1,4 +1,4 @@
-body, html {
+/* body, html {
     height: 100%;
     padding: 0;
     margin: 0;
@@ -8,4 +8,26 @@ body, html {
 
 h2 a {
     color: purple;
+} */
+
+h1 {
+    text-align: center;
+}
+.searchbar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 15px;
+    padding: 0;
+  }
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: white;
+    
 }

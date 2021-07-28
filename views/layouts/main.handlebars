@@ -6,12 +6,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anime Storefront</title>
   <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/minty/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <div class="wrapper">
     <header>
-      <h1>
+      <h1>Anime Storefront</h1>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/login">Login</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor03">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Shop</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="/">Home</a>
+            <a class="dropdown-item" href="/category/1">Apparel</a>
+            <a class="dropdown-item" href="/category/2">Stickers</a>
+            <a class="dropdown-item" href="/category/3">Prints</a>
+            <a class="dropdown-item" href="/category/4">Enamel Pins</a>
+          </div>
+        </li>
+      </ul>
+      <form class="d-flex searchbar">
+        <input class="form-control me-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+      {{!-- <h1>
         ANIME!!!!!!
       </h1>
       <nav>
@@ -39,14 +68,17 @@
         <h2>
         <a href="/login">Login</a>
         </h2>
-     </nav>
+     </nav> --}}
     </header>
     
     <main>
       {{{ body }}}
     </main>
+    </div>
+
+  <div>
     <footer>
-      Thanks for visiting!
+      All products listed on this site are property of <a href="https://www.sajustreetwear.com/">Saju Streetware</a>
     </footer>
   </div>
 

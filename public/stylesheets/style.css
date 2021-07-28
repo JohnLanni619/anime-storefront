@@ -10,7 +10,7 @@ h2 a {
     color: purple;
 } */
 
-h1 {
+h1, h3{
     text-align: center;
 }
 .searchbar {

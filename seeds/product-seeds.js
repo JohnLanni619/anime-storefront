@@ -33,10 +33,16 @@ const productData = [
     img_url: 'https://cdn.shopify.com/s/files/1/0070/4892/1139/products/bmshirtsquare_540x.jpg?v=1606438182',
   },
   {
+    product_name: 'DOUBLE-SIDED EQUIVALENT EXCHANGE SHIRT',
+    price: 29.99,
+    category_id: 1,
+    img_url: 'https://cdn.shopify.com/s/files/1/0070/4892/1139/products/lawshirt_1080x.jpg?v=1606439300',
+  },
+  {
     product_name: 'POKE-SLAYERS ENAMEL PINS - FULL SET (4 PC)',
     price: 35.99,
     category_id: 4,
-    img_url: 'https://cdn.shopify.com/s/files/1/0070/4892/1139/products/fullsetpins_720x.jpg?v=1605572600',
+    img_url: 'https://cdn.shopify.com/s/files/1/0070/4892/1139/products/fullsetpins_1080x.jpg?v=1605572600',
   },
   {
     product_name: 'PILLARS ENAMEL PINS - FULL SET (9 PCS)',
@@ -55,6 +61,18 @@ const productData = [
     price: 34.99,
     category_id: 4,
     img_url: 'https://cdn.shopify.com/s/files/1/0070/4892/1139/products/set3_720x.jpg?v=1604097032',
+  },
+  {
+    product_name: '✦SORCERERS ENAMEL PINS✦ - SET II (5 PCS)',
+    price: 64.99,
+    category_id: 4,
+    img_url: 'https://cdn.shopify.com/s/files/1/0070/4892/1139/products/set2_1080x.jpg?v=1626929173',
+  },
+  {
+    product_name: '✦A:TLA ENAMEL PINS✦ - FULL SET (7 PCS)',
+    price: 34.99,
+    category_id: 4,
+    img_url: 'https://cdn.shopify.com/s/files/1/0070/4892/1139/products/1a_1080x.jpg?v=1608582922',
   },
   {
     product_name: 'POP STARS PRINT',
@@ -80,6 +98,18 @@ const productData = [
     category_id: 3,
     img_url: 'https://cdn.shopify.com/s/files/1/0070/4892/1139/products/pillar_720x.jpg?v=1606893786',
   },
+  {
+    product_name: 'HYPEBEAST ANDROID PRINT',
+    price: 15.00,
+    category_id: 3,
+    img_url: 'https://cdn.shopify.com/s/files/1/0070/4892/1139/products/27_b39aca26-42a1-4223-b9e3-17fc0befb7cc_720x.jpg?v=1606894970',
+  },
+  {
+    product_name: 'KBBQ MINI PRINT',
+    price: 8.00,
+    category_id: 3,
+    img_url: 'https://cdn.shopify.com/s/files/1/0070/4892/1139/products/kbbq_1080x.jpg?v=1587174721',
+  },
 {
     product_name: 'KORRA METALLIC STICKERS',
     price: 35.99,
@@ -103,6 +133,18 @@ const productData = [
     price: 29.99,
     category_id: 2,
     img_url: 'https://cdn.shopify.com/s/files/1/0070/4892/1139/products/yyfullset_720x.jpg?v=1617349199',
+  },
+  {
+    product_name: 'HYPEBEAST D.B STICKERS - FULL SET (3 PCS)',
+    price: 27.99,
+    category_id: 2,
+    img_url: 'https://cdn.shopify.com/s/files/1/0070/4892/1139/products/stickers2_1080x.jpg?v=1606895003',
+  },
+  {
+    product_name: 'ATLA METALLIC STICKERS FULL SET (14 PCS)',
+    price: 29.99,
+    category_id: 2,
+    img_url: 'https://cdn.shopify.com/s/files/1/0070/4892/1139/products/atlafullset_1080x.jpg?v=1606891441',
   },
 ];
 

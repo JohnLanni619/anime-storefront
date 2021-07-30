@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const { Product, Tag, ProductTag, Category } = require('../models');
+const { Product, Tag, ProductTag, Category, User, Comment } = require('../models');
 
 router.get('/', (req, res) => {
 
@@ -52,6 +52,14 @@ router.get('/product/:id', (req, res) => {
         model: Tag,
         through: ProductTag
       },
+      {
+        model: Comment,
+        attributes: ['id', 'comment_title', 'comment_text', 'product_id', 'user_id', 'created_at'],
+        include: {
+          model: User,
+          attributes: ['username']
+        }
+      }
     ]
   })
     .then(dbProductData => {
@@ -61,7 +69,7 @@ router.get('/product/:id', (req, res) => {
       }
 
       const product = dbProductData.get({ plain: true });
-
+      console.log(product);
       res.render('single-product', {
         product,
       });

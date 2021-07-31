@@ -69,7 +69,7 @@ router.get('/product/:id', (req, res) => {
       }
 
       const product = dbProductData.get({ plain: true });
-      console.log(product);
+
       res.render('single-product', {
         product,
       });

@@ -42,7 +42,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
-      padding: 10px;
+      padding: 20px;
     }
 
     .add-to-cart {
@@ -55,7 +55,6 @@
 
     .product-image {
       float: left;
-
       margin-right: 10px;
     }
 
@@ -91,6 +90,26 @@
       border-radius: 15%;
       border: none;
     }
+
+    .comment-title {
+      resize: none;
+      width: 300px;
+      height: 30px;
+      overflow: auto;
+    }
+
+    .comment-body {
+      resize: none;
+      width: 300px;
+      height: 60px;
+      overflow: auto;
+    }
+
+    .review {
+      margin-bottom: -1px;
+      font-size: 15px;
+      font-style: italic;
+    }
   </style>
 
 </head>
@@ -125,7 +144,6 @@
         </ul>
       </div>
       <button id="logout" type="submit" class="btn btn-light my-2 my-sm-0">Logout</button>
-
     </div>
   </nav>
   </header>

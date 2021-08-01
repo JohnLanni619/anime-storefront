@@ -82,9 +82,14 @@
 
     .cards {
       max-width: 1200px;
-      margin: auto;
+      margin: 35px;
       display: grid;
       grid-gap: 50px;
+    }
+
+    button {
+      border-radius: 15%;
+      border: none;
     }
   </style>
 
@@ -99,7 +104,7 @@
   </h1>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/login">Login</a>
+      <input type="button" value="Login" class="btn btn-secondary my-2 my-sm-0" onclick="location.href = '/login';">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03"
         aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -119,7 +124,8 @@
           </li>
         </ul>
       </div>
-      <button id="logout" type="submit" class="btn-no-style">Logout</button>
+      <button id="logout" type="submit" class="btn btn-light my-2 my-sm-0">Logout</button>
+
     </div>
   </nav>
   </header>

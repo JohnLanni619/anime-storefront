@@ -1,63 +1,81 @@
 <main>
-    <div>
-        {{!-- view cart right justified --}}
+    {{!-- Cart Wireframe --}}
+    <div class="payment-form">
+        <form action="/">
+            <div class="row">
+                <div class="column">
+                    <h3>Billing Address</h3>
+                    <label for="fname">Full Name: </label>
+                    <input type="text" id="fname" name="fullname" placeholder="Jane Doe">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="Jane.Doe@gmail.com">
+                    <label for="adr">Address:</label>
+                    <input type="text" id="adr" name="address" placeholder="901 Shelby Drive">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" placeholder="Manhattan">
+                    {{!-- the columns split to have them under the rest of the address block --}}
+                    <div class="row">
+                        <div class="column">
+                            <label for="state">State: </label>
+                            <input type="text" id="state" name="state" placeholder="New York">
+                        </div>
+                        <div class="column">
+                            <label for="cip">Zipcode: </label>
+                            <input type="text" id="zip" name="zip" placeholder="10001">
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <h3>Payment</h3>
+                        <div class="payment-icons">
+                            {{!-- update with favicons for large cc retailers --}}
+                        </div>
+                        <label for="cname">Name on Card</label>
+                        <input type="text" id="cardname" placeholder="Jane Doe">
+                        <label for="ccnum">Credit Card Number</label>
+                        <input type="text" inputmode="numeric" id="ccnum" placeholder="0000-0000-0000-0000">
+                        <label for="expmonth">Expiration Date:</label>
+                        <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                    </div>
+                    {{!-- another split column block --}}
+                    <div class="row">
+                        <div class="column">
+                            <label for="expyear">Expiration Year: </label>
+                            <input type="text" id="expyear" name="expyear" placeholder="2025">
+                        </div>
+                        <div class="column">
+                            <label for="cvv">CVV: </label>
+                            <input type="text" id="cvv" name="cvv" placeholder="444">
+                        </div>
+                    </div>
+                </div>
+                <label for="">
+                    <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                </label>
+                <input type="submit" value="Continue to Checkout">
+        </form>
     </div>
 
-    {{!-- cart icon?? --}}
-    <div>
-        {{!-- cart dropdown --}}
-        <div class="shopping-cart">
-            <div class="shopping-cart-header">
-                <i class="shopping-cart-icon"></i>Cart<span class="badge">QUANTITY OF CART</span>
-                <div class="cart-total">
-                    {{!-- label for total of cart --}}
-                    <span>Total:</span>
-                    {{!-- total of cart calculated --}}
-                    <span>$TotalOfCart</span>
-                </div>
-            </div>
-            {{!-- the li repeats per item in cart --}}
-            <ul class="cart-items">
-                <li>
-                    <img src="https://via.placeholder.com/50
-
-C/O https://placeholder.com/#How_To_Set_Image_Size" alt="">
-                    <span class="item-name">ITEM NAME</span>
-                    <span class="item-detail">ITEM DETAIL</span>
-                    <span class="price">PRICE</span>
-                    <span class="item-quantity">QUANTITY</span>
-                </li>
-            </ul>
-        </div>
+    <div class="column cart">
+      <h4>Cart
+        <span class="price" style="color:black">
+            {{!-- the icon below is not a thing but just connecting some logic for myself --}}
+          <i class="placeholder-cart-icon"></i>
+          <b>4</b>
+        </span>
+      </h4>
+      {{!-- will get changed out for connecting template literal to feed in data  --}}
+      <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+      <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+      <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+      <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+      <hr>
+      {{!-- will get changed out for connecting template literal to feed in data --}}
+      <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
     </div>
-
-
-    {{!-- Shopping Basket --}}
-    <div class="basket">
-        <div class="basket-header">
-            <ul>
-                <li class="item">Item</li>
-                <li class="price">Price</li>
-                <li class="quantity">Quantity</li>
-                <li class="subtotal">Subtotal</li>
-            </ul>
-        </div>
-
-        <div class="basket-product">
-            <div class="item">
-                <div class="product-image">
-                    <img src="https://via.placeholder.com/150
-
-C/O https://placeholder.com/#How_To_Set_Image_Size" alt="">
-                </div>
-                <div class="product-details">
-                    <h1><span class="item-quantity">4</span></h1>
-                </div>
-            </div>
-        </div>
-
     </div>
 
 
 
 </main>
+{{!-- a simple wireframe that we hope to update at another opportunity! --}}
